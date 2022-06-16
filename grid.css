@@ -1,0 +1,32 @@
+main{
+    display: grid;
+    grid-template-areas:"a a a b b"
+    "c c d d d" 
+    "c c e e e";
+    height: 500px;
+    width: 800px;
+    gap: 10px;
+    
+}
+
+.itema{
+    background: yellow;
+    grid-area: a;
+}
+.itemb{
+    background: blue;
+    grid-area: b;
+}
+.itemc{
+    background: black;
+    grid-area: c;
+}
+.itemd{
+    background: brown;
+    grid-area: d;
+}
+
+.iteme{
+    background: brown;
+    grid-area: e;
+}

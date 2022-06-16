@@ -1,0 +1,90 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+
+.flex-container{
+display: flex;
+padding: 150px;
+
+
+
+
+}
+
+body{
+    background: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+.sedan{
+    background:hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+    padding: 20px;
+    flex-grow: 1;
+    
+    
+}
+
+.suv{
+   background: hsl(184, 100%, 22%);
+   padding: 20px;
+   flex-grow: 1;
+   
+}
+
+.luxury{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+    padding: 20px;
+    flex-grow: 1;
+    
+}
+p, h2{
+   color:hsla(0, 0%, 100%, 0.75)
+}
+h2{
+    font-family: 'Big Shoulders Display';
+    font-weight:700 ;
+    
+}
+
+button{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    background: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    padding: 0px 25px;
+    border: 2px solid white;
+    
+    
+}
+
+.sedan > button{
+    color: hsl(31, 77%, 52%);
+    
+    
+}
+
+.suv > button{
+    color: hsl(184, 100%, 22%);
+    
+}
+
+.luxury > button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover{
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+    border-color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container{
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+}
