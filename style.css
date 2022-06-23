@@ -3,7 +3,12 @@
 
 .flex-container{
 display: flex;
-padding: 150px;
+height: 100vh;
+align-items: center;
+padding: 0 10px;
+flex-grow: 1;
+
+
 
 
 
@@ -19,7 +24,7 @@ body{
     background:hsl(31, 77%, 52%);
     border-radius: 5px 0 0 5px;
     padding: 20px;
-    flex-grow: 1;
+    
     
     
 }
@@ -27,7 +32,7 @@ body{
 .suv{
    background: hsl(184, 100%, 22%);
    padding: 20px;
-   flex-grow: 1;
+   
    
 }
 
@@ -35,7 +40,8 @@ body{
     background: hsl(179, 100%, 13%);
     border-radius: 0 5px 5px 0;
     padding: 20px;
-    flex-grow: 1;
+    
+    
     
 }
 p, h2{
@@ -81,10 +87,12 @@ button:hover{
     cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+
+
+@media screen and (max-width: 768px) {
     .flex-container{
         flex-direction: column;
-        padding: 0px;
+       
+        
     }
-    
 }
